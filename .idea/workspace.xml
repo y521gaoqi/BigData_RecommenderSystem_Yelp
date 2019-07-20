@@ -60,6 +60,44 @@
     <option name="width" value="1280" />
     <option name="height" value="715" />
   </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BigData_RecommenderSystem_Yelp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigData_RecommenderSystem_Yelp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigData_RecommenderSystem_Yelp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigData_RecommenderSystem_Yelp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigData_RecommenderSystem_Yelp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigData_RecommenderSystem_Yelp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigData_RecommenderSystem_Yelp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigData_RecommenderSystem_Yelp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -125,6 +163,9 @@
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
       </map>
     </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
