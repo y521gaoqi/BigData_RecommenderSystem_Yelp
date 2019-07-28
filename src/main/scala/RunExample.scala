@@ -35,13 +35,26 @@ object RunExample {
       .appName("Spark JSON Reader")
       .getOrCreate;
     val business=spark.read.option("multiLine", false).option("mode", "PERMISSIVE").json("business.json")
+    //business.printSchema()
     //business.select("address","business_id","categories").show
 
     val review=spark.read.option("multiLine", false).option("mode", "PERMISSIVE").json("review.json")
-    review.select("business_id","date","text").show
+    //review.printSchema()
+    //review.select("business_id","date","text").show
 
     val user=spark.read.option("multiLine", false).option("mode", "PERMISSIVE").json("user.json")
     //user.printSchema()
+
+    val tip=spark.read.option("multiLine", false).option("mode", "PERMISSIVE").json("tip.json")
+//    tip.printSchema()
+//
+    val photo=spark.read.option("multiLine", false).option("mode", "PERMISSIVE").json("photo.json")
+//    photo.printSchema()
+
+    val check_in=spark.read.option("multiLine", false).option("mode", "PERMISSIVE").json("checkin.json")
+    check_in.printSchema()
+
+
 
 
 
