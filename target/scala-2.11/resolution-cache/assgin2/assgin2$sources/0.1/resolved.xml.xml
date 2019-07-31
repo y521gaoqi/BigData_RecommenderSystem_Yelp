@@ -4,7 +4,7 @@
 		module="assgin2$sources"
 		revision="0.1"
 		status="integration"
-		publication="20190719235409"
+		publication="20190731015634"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
