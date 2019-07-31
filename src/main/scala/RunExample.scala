@@ -157,19 +157,22 @@ object RunExample {
 //    val businessRecs = model.recommendForAllItems(10)
 //
 //    val users = indexed.select(als.getUserCol).distinct().limit(3)
-//    val userSubsetRecs = model.recommendForUserSubset(users, 10)
-//    // Generate top 10 user recommendations for a specified set of movies
-    //val businessRec = new_review.select(als.getItemCol).distinct().limit(3)
-    val uID="0vjJ41d_87M_wfunhnBQfg"
+    val users =new_review.where(new_review.col("user_id")===input1 || new_review.col("user_id")===input2 ||new_review.col("user_id")===input3).select(als.getUserCol)
+
+    val userSubsetRecs = model.recommendForUserSubset(users, 10)
+
+//    val businessRec = new_review.select(als.getItemCol).distinct().limit(3)
+//    val uID="0vjJ41d_87M_wfunhnBQfg"
     val businessRec =new_review.where(new_review.col("user_id")===input1 || new_review.col("user_id")===input2 ||new_review.col("user_id")===input3).select(als.getItemCol)
     //val businessRec = spark.sql("SELECT user_id_index FROM new_review WHERE user_id = IQjxYnrntLdH8XsiXy8KMA")
-
+//
     val businessSubSetRecs = model.recommendForItemSubset(businessRec, 10)
 
 
 //    userRecs.repartition(1).rdd.saveAsTextFile("userRecommand")
 //    businessRecs.repartition(1).rdd.saveAsTextFile("businessRecommand")
 //    userSubsetRecs.repartition(1).rdd.saveAsTextFile("userSubsetRecs")
+    userSubsetRecs.repartition(1).rdd.saveAsTextFile("users_Recommendations")
     businessSubSetRecs.repartition(1).rdd.saveAsTextFile("business_Recommendations")
 
     //println(userRecs.getClass.toString())
@@ -184,6 +187,7 @@ object RunExample {
     userRecs.show()
 //    businessRecs.show()
 //    userSubsetRecs.show()
+    userSubsetRecs.show()
     businessSubSetRecs.show()
 
     spark.stop()
